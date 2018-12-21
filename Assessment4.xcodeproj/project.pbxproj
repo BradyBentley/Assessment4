@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		266FD2F721CD4691008CCD75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 266FD2F621CD4691008CCD75 /* AppDelegate.m */; };
-		266FD2FA21CD4691008CCD75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266FD2F921CD4691008CCD75 /* ViewController.m */; };
 		266FD2FD21CD4691008CCD75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266FD2FB21CD4691008CCD75 /* Main.storyboard */; };
 		266FD2FF21CD4693008CCD75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 266FD2FE21CD4693008CCD75 /* Assets.xcassets */; };
 		266FD30221CD4693008CCD75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266FD30021CD4693008CCD75 /* LaunchScreen.storyboard */; };
 		266FD30521CD4693008CCD75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 266FD30421CD4693008CCD75 /* main.m */; };
+		266FD30D21CD4A2D008CCD75 /* BBMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 266FD30C21CD4A2D008CCD75 /* BBMovie.m */; };
+		266FD31121CD4C32008CCD75 /* BBMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266FD31021CD4C32008CCD75 /* BBMovieController.m */; };
+		266FD31621CD5360008CCD75 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266FD31521CD5360008CCD75 /* MovieTableViewController.swift */; };
+		266FD31921CD53C3008CCD75 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266FD31821CD53C3008CCD75 /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		266FD2F221CD4691008CCD75 /* Assessment4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessment4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		266FD2F521CD4691008CCD75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		266FD2F621CD4691008CCD75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		266FD2F821CD4691008CCD75 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		266FD2F921CD4691008CCD75 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		266FD2FC21CD4691008CCD75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		266FD2FE21CD4693008CCD75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		266FD30121CD4693008CCD75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		266FD30321CD4693008CCD75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		266FD30421CD4693008CCD75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		266FD30B21CD4A2D008CCD75 /* BBMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBMovie.h; sourceTree = "<group>"; };
+		266FD30C21CD4A2D008CCD75 /* BBMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBMovie.m; sourceTree = "<group>"; };
+		266FD30F21CD4C32008CCD75 /* BBMovieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBMovieController.h; sourceTree = "<group>"; };
+		266FD31021CD4C32008CCD75 /* BBMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBMovieController.m; sourceTree = "<group>"; };
+		266FD31421CD5360008CCD75 /* Assessment4-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assessment4-Bridging-Header.h"; sourceTree = "<group>"; };
+		266FD31521CD5360008CCD75 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		266FD31821CD53C3008CCD75 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +68,60 @@
 			children = (
 				266FD2F521CD4691008CCD75 /* AppDelegate.h */,
 				266FD2F621CD4691008CCD75 /* AppDelegate.m */,
-				266FD2F821CD4691008CCD75 /* ViewController.h */,
-				266FD2F921CD4691008CCD75 /* ViewController.m */,
+				266FD31321CD4D0D008CCD75 /* Resources */,
+				266FD30E21CD4A53008CCD75 /* Model */,
+				266FD31221CD4C39008CCD75 /* ModelController */,
+				266FD31A21CD53C9008CCD75 /* Views */,
+				266FD31721CD5366008CCD75 /* ViewController */,
+				266FD31421CD5360008CCD75 /* Assessment4-Bridging-Header.h */,
+			);
+			path = Assessment4;
+			sourceTree = "<group>";
+		};
+		266FD30E21CD4A53008CCD75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				266FD30B21CD4A2D008CCD75 /* BBMovie.h */,
+				266FD30C21CD4A2D008CCD75 /* BBMovie.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		266FD31221CD4C39008CCD75 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				266FD30F21CD4C32008CCD75 /* BBMovieController.h */,
+				266FD31021CD4C32008CCD75 /* BBMovieController.m */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		266FD31321CD4D0D008CCD75 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				266FD2FB21CD4691008CCD75 /* Main.storyboard */,
 				266FD2FE21CD4693008CCD75 /* Assets.xcassets */,
 				266FD30021CD4693008CCD75 /* LaunchScreen.storyboard */,
 				266FD30321CD4693008CCD75 /* Info.plist */,
 				266FD30421CD4693008CCD75 /* main.m */,
 			);
-			path = Assessment4;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		266FD31721CD5366008CCD75 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				266FD31521CD5360008CCD75 /* MovieTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		266FD31A21CD53C9008CCD75 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				266FD31821CD53C3008CCD75 /* MovieTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +155,7 @@
 				TargetAttributes = {
 					266FD2F121CD4691008CCD75 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -141,9 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				266FD2FA21CD4691008CCD75 /* ViewController.m in Sources */,
+				266FD31621CD5360008CCD75 /* MovieTableViewController.swift in Sources */,
 				266FD30521CD4693008CCD75 /* main.m in Sources */,
+				266FD31921CD53C3008CCD75 /* MovieTableViewCell.swift in Sources */,
 				266FD2F721CD4691008CCD75 /* AppDelegate.m in Sources */,
+				266FD31121CD4C32008CCD75 /* BBMovieController.m in Sources */,
+				266FD30D21CD4A2D008CCD75 /* BBMovie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,14 +342,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Assessment4/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Assessment4/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bradybentley.Assessment4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Assessment4/Assessment4-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,14 +362,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Assessment4/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Assessment4/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bradybentley.Assessment4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Assessment4/Assessment4-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

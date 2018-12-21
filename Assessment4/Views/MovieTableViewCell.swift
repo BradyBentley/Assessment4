@@ -9,16 +9,31 @@
 import UIKit
 
 class MovieTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    // MARK: - Outlets
+    @IBOutlet weak var titleMovieLabel: UILabel!
+    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var overviewLabel: UILabel!
+    @IBOutlet weak var moviePosterImageView: UIImageView!
+    
+    // MARK: - Properties
+    var movie: BBMovie? {
+        didSet {
+            updateViews()
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    // MARK: - Functions
+    func updateViews() {
+        guard let movie = movie else { return }
+        titleMovieLabel.text = movie.title
+        ratingLabel.text = "Rating: \(movie.rating)"
+        overviewLabel.text = movie.overview
+        BBMovieController.fetchImage(with: movie) { (image) in
+            guard let image = image else { return }
+            DispatchQueue.main.async {
+                self.moviePosterImageView.image = image
+            }
+        }
     }
-
 }

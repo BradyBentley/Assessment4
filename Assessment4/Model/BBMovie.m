@@ -7,9 +7,6 @@
 //
 
 #import "BBMovie.h"
-//@property (nonatomic, readonly) NSString *title;
-//@property (nonatomic, readonly) NSInteger rating;
-//@property (nonatomic, readonly) NSString *overview;
 
 @implementation BBMovie
 
@@ -20,7 +17,8 @@
     if (self) {
         _title = dictionary[@"title"];
         _rating = [dictionary[@"vote_average"] integerValue];
-        _overview =dictionary[@"overview"];
+        _overview = dictionary[@"overview"];
+        _moviePoster = dictionary[@"poster_path"];
     }
     return self;
 }
