@@ -55,7 +55,7 @@
         completion(nil);
         return;
     }
-    NSLog(@"🛰%@", imageUrl.absoluteString);
+
     //DataTask + Resume
     [[[NSURLSession sharedSession] dataTaskWithURL:imageUrl completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {

@@ -16,6 +16,7 @@
 		266FD31121CD4C32008CCD75 /* BBMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 266FD31021CD4C32008CCD75 /* BBMovieController.m */; };
 		266FD31621CD5360008CCD75 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266FD31521CD5360008CCD75 /* MovieTableViewController.swift */; };
 		266FD31921CD53C3008CCD75 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266FD31821CD53C3008CCD75 /* MovieTableViewCell.swift */; };
+		266FD31C21CD6E49008CCD75 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266FD31B21CD6E48008CCD75 /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		266FD31421CD5360008CCD75 /* Assessment4-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assessment4-Bridging-Header.h"; sourceTree = "<group>"; };
 		266FD31521CD5360008CCD75 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 		266FD31821CD53C3008CCD75 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		266FD31B21CD6E48008CCD75 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				266FD31521CD5360008CCD75 /* MovieTableViewController.swift */,
+				266FD31B21CD6E48008CCD75 /* MovieDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				266FD30521CD4693008CCD75 /* main.m in Sources */,
 				266FD31921CD53C3008CCD75 /* MovieTableViewCell.swift in Sources */,
 				266FD2F721CD4691008CCD75 /* AppDelegate.m in Sources */,
+				266FD31C21CD6E49008CCD75 /* MovieDetailViewController.swift in Sources */,
 				266FD31121CD4C32008CCD75 /* BBMovieController.m in Sources */,
 				266FD30D21CD4A2D008CCD75 /* BBMovie.m in Sources */,
 			);

@@ -14,7 +14,7 @@ class MovieTableViewController: UITableViewController {
     @IBOutlet weak var movieSearchBar: UISearchBar!
     
     // MARK: - Properties
-    var movies: [BBMovie] = []
+    var movie: [BBMovie] = []
     
     // MARK: - ViewLifeCycle
     override func viewDidLoad() {
@@ -25,14 +25,24 @@ class MovieTableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return movies.count
+        return movie.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieTableViewCell
-        let movie = movies[indexPath.row]
+        let movie = self.movie[indexPath.row]
         cell.movie = movie
         return cell
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToMovieDetail" {
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let destinationVC = segue.destination as? MovieDetailViewController
+            let movie = self.movie[indexPath.row]
+            destinationVC?.movie = movie
+        }
     }
 }
 
@@ -42,7 +52,7 @@ extension MovieTableViewController: UISearchBarDelegate {
         guard let searchTerm = movieSearchBar.text, !searchTerm.isEmpty else { return }
         BBMovieController.fetchMovie(withName: searchTerm) { (movies) in
             guard let movies = movies else { return }
-            self.movies = movies
+            self.movie = movies
             DispatchQueue.main.async {
                 self.tableView.reloadData()
                 self.movieSearchBar.text = ""

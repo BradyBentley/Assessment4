@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSInteger rating;
 @property (nonatomic, readonly) NSString *overview;
 @property (nonatomic, readonly, nullable) NSString *moviePoster;
+@property (nonatomic, readonly) NSInteger votes;
+@property (nonatomic, readonly) NSString *releaseDate;
 
 // MARK: - Initialization
 -(instancetype)initWithDictionary: (NSDictionary *)dictionary;

@@ -19,6 +19,8 @@
         _rating = [dictionary[@"vote_average"] integerValue];
         _overview = dictionary[@"overview"];
         _moviePoster = dictionary[@"poster_path"];
+        _votes = [dictionary[@"vote_count"] integerValue];
+        _releaseDate = dictionary[@"release_date"];
     }
     return self;
 }
