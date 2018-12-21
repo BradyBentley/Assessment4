@@ -49,7 +49,8 @@
 + (void)fetchImageWithMovie:(BBMovie *)movie completion:(void (^)(UIImage * _Nullable))completion
 {
     //URL + Request
-    NSURL *imageUrl = [[NSURL alloc] initWithString:@"https://image.tmdb.org/t/p/w500"];
+    NSString *url = [NSString stringWithFormat:@"%s%@", "https://image.tmdb.org/t/p/w500", movie.moviePoster];
+    NSURL *imageUrl = [[NSURL alloc] initWithString:url];
     if(!imageUrl){
         completion(nil);
         return;
